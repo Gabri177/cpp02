@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yugao <yugao@student.42madrid.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/13 02:42:57 by yugao             #+#    #+#             */
+/*   Updated: 2024/05/13 02:42:58 by yugao            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.hpp"
 #include <cmath>
 
@@ -42,7 +54,7 @@ Fixed::Fixed(const int num): _nbr_val(num << _nbr_bits){
 	//std::cout << "Int constructor called" << std::endl;
 }
 
-Fixed::Fixed(const float num): _nbr_val(std::roundf(num * (1 << _nbr_bits))){
+Fixed::Fixed(const float num): _nbr_val(roundf(num * (1 << _nbr_bits))){
 
 	//std::cout << "Float constructor called" << std::endl;
 }
